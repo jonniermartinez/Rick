@@ -67,8 +67,7 @@ function fetchData2(){
 }
 // Función para buscar los personajes
 const fetchDataAsync = async (url_api, id) =>  {
-  const data = await fetchData(`${url_api}?page=${id}`);
-
+  const data = await fetchData(`${url_api}?name=${id}`);
   data.results.map(character => {
     const card = buildCard2(character);
     asyncContainer.innerHTML(card)
