@@ -78,7 +78,7 @@ a{
 }
 @media (max-width: 425px) {
     .header-title div {
-     //   display: none;
+      display: none;
     }
     .header-title{
         margin: 5rem auto;
