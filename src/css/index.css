@@ -87,6 +87,10 @@ a{
            width: 60%;
         margin: 0;
     }
+    .buscador input{
+        width: 80%;
+        font-size: calc(.7rem + 1vw);
+    }
 }
 .app{
     width: 100%;
