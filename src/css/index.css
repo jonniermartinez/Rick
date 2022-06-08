@@ -89,7 +89,7 @@ a{
     }
     .buscador input{
         width: 80%;
-        font-size: calc(.7rem + 1vw);
+        font-size: calc(1.7rem + 1vw);
     }
 }
 .app{
