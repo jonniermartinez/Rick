@@ -17,11 +17,15 @@ const asyncContainer = document.getElementById("app");
 const input = document.getElementById("input")
 const buscar = document.getElementById("buscar")
 const close = document.querySelector(".close")
+const mainContainer = document.querySelector(".main-container")
+const characters = document.getElementById("characters")
 
 const buildCard = (character) => {
-    return ` <div class="card">
+    return ` 
+    
+    <div class="characters--Container">
       <strong class="status">${character.status}</strong>
-      <img src="${character.image}" alt="${character.name}" class="character" />
+      <img src="${character.image}" alt="${character.name}" class="characterImg" />
       <h2>${character.name}</h2>
       <span>${character.species}</span>
     </div>`
@@ -81,4 +85,15 @@ const remove = () => {
 
 buscar.addEventListener('click', () => {
   fetchDataAsync(API, input.value)
+})
+addEventListener('keypress', (e) =>{
+  if (e.key === "Enter"){
+    fetchDataAsync(API, input.value)
+  }
+})
+characters.addEventListener('click', () => {
+  mainContainer.innerHTML = '';
+  fetchData2();
+  // anadir la clase ALLcharacters
+  asyncContainer.classList.add("AllCharacters")
 })
