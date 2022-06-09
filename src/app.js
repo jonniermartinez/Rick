@@ -79,7 +79,6 @@ function fetchData2(){
       return buildCard(character);
     })
     asyncContainer.innerHTML += characters.join(' ')
-    console.log(characters)
   })
   .catch(err => console.error('No found ' + err))
 }
