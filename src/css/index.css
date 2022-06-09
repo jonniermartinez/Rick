@@ -167,4 +167,16 @@ a{
         width: 80%;
         font-size: calc(1.7rem + 1vw);
     }
+    .AllCharacters{
+        width: 80vw;   
+        margin-left: 2.5rem; 
+    }
+    .AllCharacters img{
+        width: 250px;
+    }
+    .AllCharacters h2{
+        font-size: 2.5rem;
+    }    
+
+
 }
