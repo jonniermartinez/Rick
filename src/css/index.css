@@ -47,7 +47,7 @@ a{
 }
 .header-title div h1{
     color: var(--primary-color);
-    font-size: calc(3rem + 1vw);
+    font-size: calc(2.5rem + 1vw);
 }
 .header-title img {
     width: 50%;
